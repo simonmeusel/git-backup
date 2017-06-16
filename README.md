@@ -25,7 +25,7 @@ $ npm link
 5. Use `cron` or `launchcontrol` to schedule the execution of this command:
 
 ```
-$ git-backup
+$ git-backup backup
 ```
 
 ## Configuration
