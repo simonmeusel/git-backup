@@ -51,7 +51,7 @@ $ git-backup backup
 ```
 
 `folder`: path of folder where backups should be saved to
-`github.base`: Base url of GitHub api (Will be different for GitHub Enterprise)
+`github.base`: Base URL of GitHub API (Will be different for GitHub Enterprise)
 `github.auth`: Credentials of your account used for basic authentication
-`gitlab.base`: Base url of GitLab api (Will be different if you're not using `gitlab.com`)
-`gitlab.auth.privaate_token`: Token used for authentication (Create the token in your GitLab settings)
+`gitlab.base`: Base URL of GitLab API (Will be different if you're not using `gitlab.com`)
+`gitlab.auth.private_token`: Token used for authentication (Create the token in your GitLab settings)
