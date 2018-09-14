@@ -4,14 +4,15 @@
   "description": "Backup your git repositiries from remote",
   "main": "index.js",
   "scripts": {
+    "start": "node lib/cli.js backup",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Simon Meusel",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.16.2",
-    "commander": "^2.9.0",
-    "fs-extra": "^3.0.1"
+    "axios": "^0.18.0",
+    "commander": "^2.18.0",
+    "fs-extra": "^7.0.0"
   },
   "repository": {
     "type": "git",
