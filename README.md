@@ -3,8 +3,9 @@ Make a backup of your online git repositories
 
 ## Supported providers
 
-* GitHub (Basic Auth)
+* GitHub (Access token)
 * GitLab (Private token)
+* Gitea (Access token)
 
 ## Installation
 
@@ -28,30 +29,31 @@ $ npm link
 $ git-backup backup
 ```
 
+Alternatively you can run the program with `npm start`.
+
 ## Configuration
 
 `.env.example.json`
 ```
 {
-  "folder": "/Users/XXX/git-backup",
+  "folder": "Insert destination folder path here",
   "github": {
     "base": "https://api.github.com",
     "auth": {
-      "username": "XXX",
-      "password": "XXX"
+      "access_token": "Get your access token at https://github.com/settings/tokens"
     }
   },
   "gitlab": {
     "base": "https://gitlab.com/api/v4",
     "auth": {
-      "private_token": "XXX"
+      "private_token": "Get your personal token at https://gitlab.com/profile/personal_access_tokens"
+    }
+  },
+  "gitea": {
+    "base": "https://try.gitea.io/api/v1",
+    "auth": {
+      "access_token": "Get your access token at https://try.gitea.io/user/settings/applications"
     }
   }
 }
 ```
-
-`folder`: path of folder where backups should be saved to
-`github.base`: Base URL of GitHub API (Will be different for GitHub Enterprise)
-`github.auth`: Credentials of your account used for basic authentication
-`gitlab.base`: Base URL of GitLab API (Will be different if you're not using `gitlab.com`)
-`gitlab.auth.private_token`: Token used for authentication (Create the token in your GitLab settings)
